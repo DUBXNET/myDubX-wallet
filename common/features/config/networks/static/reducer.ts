@@ -23,6 +23,7 @@ const testnetDefaultGasPrice = {
 };
 
 export const STATIC_NETWORKS_INITIAL_STATE: types.ConfigStaticNetworksState = {
+
   DUBX: {
     id: 'DUBX',
     name: 'DubXNet',
@@ -70,7 +71,33 @@ export const STATIC_NETWORKS_INITIAL_STATE: types.ConfigStaticNetworksState = {
       [InsecureWalletName.MNEMONIC_PHRASE]: ETH_TESTNET
     },
     gasPriceSettings: testnetDefaultGasPrice
-  }
+  },
+  ETH: {
+    id: 'ETH',
+    name: 'Ethereum',
+    unit: 'ETH',
+    chainId: 1,
+    isCustom: false,
+    color: '#007896',
+    blockExplorer: makeExplorer({
+      name: 'Etherscan',
+      origin: 'https://etherscan.io'
+    }),
+    tokenExplorer: {
+      name: ethPlorer,
+      address: ETHTokenExplorer
+    },
+    tokens: require('config/tokens/eth.json'),
+    contracts: require('config/contracts/eth.json'),
+    dPathFormats: {
+      [SecureWalletName.TREZOR]: ETH_TREZOR,
+      [SecureWalletName.SAFE_T]: ETH_SAFE_T,
+      [SecureWalletName.LEDGER_NANO_S]: ETH_LEDGER,
+      [InsecureWalletName.MNEMONIC_PHRASE]: ETH_DEFAULT
+    },
+    gasPriceSettings: gasPriceDefaults,
+    shouldEstimateGasPrice: true
+  },
 };
 
 export function staticNetworksReducer(

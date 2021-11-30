@@ -17,6 +17,7 @@ export const getStaticNodeConfig = (state: AppState) => {
   const { staticNodes, selectedNode: { nodeId } } = getNodes(state);
 
   const defaultNetwork = isStaticNodeId(state, nodeId) ? staticNodes[nodeId] : undefined;
+  console.log(111111111,defaultNetwork);
   return defaultNetwork;
 };
 

@@ -6,9 +6,10 @@ export const makeNodeName = (network: string, name: string) => {
 };
 
 export const NODE_CONFIGS: { [key in StaticNetworkIds]: RawNodeConfig[] } = {
+
   DUBX: [
     {
-      name: makeNodeName('DUBX', 'data'),
+      name: makeNodeName('DUBX', 'auto'),
       type: 'rpc',
       service: 'RPC',
       url: 'http://explorer.dubxnet.com/prc'
@@ -22,7 +23,7 @@ export const NODE_CONFIGS: { [key in StaticNetworkIds]: RawNodeConfig[] } = {
   ],
   DUBT: [
     {
-      name: makeNodeName('DUBT', 'data'),
+      name: makeNodeName('DUBT', 'auto'),
       type: 'rpc',
       service: 'RPC',
       url: 'http://explorer.testnet.dubxnet.com/prc'
@@ -34,7 +35,32 @@ export const NODE_CONFIGS: { [key in StaticNetworkIds]: RawNodeConfig[] } = {
       url: 'http://explorer.testnet.dubxnet.com/api'
     }
   ],
-
+  ETH: [
+    {
+      name: makeNodeName('ETH', 'mycrypto'),
+      type: 'rpc',
+      service: 'MyCrypto',
+      url: 'https://api.mycryptoapi.com/eth'
+    },
+    {
+      name: makeNodeName('ETH', 'ethscan'),
+      type: 'etherscan',
+      service: 'Etherscan',
+      url: 'https://api.etherscan.io/api'
+    },
+    {
+      name: makeNodeName('ETH', 'infura'),
+      type: 'infura',
+      service: 'Infura',
+      url: 'https://mainnet.infura.io/mycrypto'
+    },
+    {
+      name: makeNodeName('ETH', 'blockscale'),
+      type: 'rpc',
+      service: 'Blockscale',
+      url: 'https://api.dev.blockscale.net/dev/parity'
+    }
+  ],
   // Kovan: [
   //   {
   //     name: makeNodeName('Kovan', 'ethscan'),
