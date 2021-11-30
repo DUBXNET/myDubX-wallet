@@ -1,5 +1,5 @@
-# docker build -t mycrypto-builder . -f ./Dockerfile.build
-# docker run -it --name mycrypto-builder-v $PWD:/app --rm mycrypto-builder bash
+# docker build -t mycrypto-builder . -f ./Dockerfile.build 
+# docker run -it --name mycrypto-builder -v $PWD:/app -v $PWD/.cache:/root/.cache --rm mycrypto-builder yarn run build:electron
 FROM ubuntu:16.04
 
 # Replace shell with bash so we can source files

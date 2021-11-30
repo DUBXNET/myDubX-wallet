@@ -6,302 +6,295 @@ export const makeNodeName = (network: string, name: string) => {
 };
 
 export const NODE_CONFIGS: { [key in StaticNetworkIds]: RawNodeConfig[] } = {
-  ETH: [
+  DUBX: [
     {
-      name: makeNodeName('ETH', 'mycrypto'),
+      name: makeNodeName('DUBX', 'data'),
       type: 'rpc',
-      service: 'MyCrypto',
-      url: 'https://api.mycryptoapi.com/eth'
+      service: 'RPC',
+      url: 'http://explorer.dubxnet.com/prc'
     },
     {
-      name: makeNodeName('ETH', 'ethscan'),
+      name: makeNodeName('DUBX', 'explorer'),
       type: 'etherscan',
-      service: 'Etherscan',
-      url: 'https://api.etherscan.io/api'
-    },
+      service: 'Explorer',
+      url: 'http://explorer.dubxnet.com/api'
+    }
+  ],
+  DUBT: [
     {
-      name: makeNodeName('ETH', 'infura'),
-      type: 'infura',
-      service: 'Infura',
-      url: 'https://mainnet.infura.io/mycrypto'
-    },
-    {
-      name: makeNodeName('ETH', 'blockscale'),
+      name: makeNodeName('DUBT', 'data'),
       type: 'rpc',
-      service: 'Blockscale',
-      url: 'https://api.dev.blockscale.net/dev/parity'
-    }
-  ],
-
-  Ropsten: [
+      service: 'RPC',
+      url: 'http://explorer.testnet.dubxnet.com/prc'
+    },
     {
-      name: makeNodeName('Ropsten', 'infura'),
-      type: 'infura',
-      service: 'Infura',
-      url: 'https://ropsten.infura.io/mycrypto'
-    }
-  ],
-
-  Kovan: [
-    {
-      name: makeNodeName('Kovan', 'ethscan'),
+      name: makeNodeName('DUBT', 'explorer'),
       type: 'etherscan',
-      service: 'Etherscan',
-      url: 'https://kovan.etherscan.io/api'
+      service: 'Explorer testnet',
+      url: 'http://explorer.testnet.dubxnet.com/api'
     }
   ],
 
-  Rinkeby: [
-    {
-      name: makeNodeName('Rinkeby', 'infura'),
-      type: 'infura',
-      service: 'Infura',
-      url: 'https://rinkeby.infura.io/mycrypto'
-    },
-    {
-      name: makeNodeName('Rinkeby', 'ethscan'),
-      type: 'etherscan',
-      service: 'Etherscan',
-      url: 'https://rinkeby.etherscan.io/api'
-    }
-  ],
+  // Kovan: [
+  //   {
+  //     name: makeNodeName('Kovan', 'ethscan'),
+  //     type: 'etherscan',
+  //     service: 'Etherscan',
+  //     url: 'https://kovan.etherscan.io/api'
+  //   }
+  // ],
 
-  ETC: [
-    {
-      name: makeNodeName('ETC', 'epool'),
-      type: 'rpc',
-      service: 'Epool.io',
-      url: 'https://cry.epool.io'
-    },
-    {
-      name: makeNodeName('ETC', 'gastracker'),
-      type: 'rpc',
-      service: 'GasTracker',
-      url: 'https://web3.gastracker.io'
-    },
-    {
-      name: makeNodeName('ETC', 'etccooperative'),
-      type: 'rpc',
-      service: 'ETC Cooperative',
-      url: 'https://ethereumclassic.network'
-    }
-  ],
+  // Rinkeby: [
+  //   {
+  //     name: makeNodeName('Rinkeby', 'infura'),
+  //     type: 'infura',
+  //     service: 'Infura',
+  //     url: 'https://rinkeby.infura.io/mycrypto'
+  //   },
+  //   {
+  //     name: makeNodeName('Rinkeby', 'ethscan'),
+  //     type: 'etherscan',
+  //     service: 'Etherscan',
+  //     url: 'https://rinkeby.etherscan.io/api'
+  //   }
+  // ],
 
-  UBQ: [
-    {
-      name: makeNodeName('UBQ', 'ubiqscan'),
-      type: 'rpc',
-      service: 'ubiqscan.io',
-      url: 'https://pyrus2.ubiqscan.io'
-    }
-  ],
+  // ETC: [
+  //   {
+  //     name: makeNodeName('ETC', 'epool'),
+  //     type: 'rpc',
+  //     service: 'Epool.io',
+  //     url: 'https://cry.epool.io'
+  //   },
+  //   {
+  //     name: makeNodeName('ETC', 'gastracker'),
+  //     type: 'rpc',
+  //     service: 'GasTracker',
+  //     url: 'https://web3.gastracker.io'
+  //   },
+  //   {
+  //     name: makeNodeName('ETC', 'etccooperative'),
+  //     type: 'rpc',
+  //     service: 'ETC Cooperative',
+  //     url: 'https://ethereumclassic.network'
+  //   }
+  // ],
 
-  EXP: [
-    {
-      name: makeNodeName('EXP', 'tech'),
-      type: 'rpc',
-      service: 'expanse.tech',
-      url: 'https://node.expanse.tech/'
-    }
-  ],
+  // UBQ: [
+  //   {
+  //     name: makeNodeName('UBQ', 'ubiqscan'),
+  //     type: 'rpc',
+  //     service: 'ubiqscan.io',
+  //     url: 'https://pyrus2.ubiqscan.io'
+  //   }
+  // ],
 
-  POA: [
-    {
-      name: makeNodeName('POA', 'core'),
-      type: 'infura',
-      service: 'poa.infura.io',
-      url: 'https://poa.infura.io'
-    }
-  ],
+  // EXP: [
+  //   {
+  //     name: makeNodeName('EXP', 'tech'),
+  //     type: 'rpc',
+  //     service: 'expanse.tech',
+  //     url: 'https://node.expanse.tech/'
+  //   }
+  // ],
 
-  TOMO: [
-    {
-      name: makeNodeName('TOMO', 'tomocoin'),
-      type: 'rpc',
-      service: 'tomocoin.io',
-      url: 'https://core.tomocoin.io'
-    }
-  ],
+  // POA: [
+  //   {
+  //     name: makeNodeName('POA', 'core'),
+  //     type: 'infura',
+  //     service: 'poa.infura.io',
+  //     url: 'https://poa.infura.io'
+  //   }
+  // ],
 
-  ELLA: [
-    {
-      name: makeNodeName('ELLA', 'ellaism'),
-      type: 'rpc',
-      service: 'ellaism.org',
-      url: 'https://jsonrpc.ellaism.org'
-    }
-  ],
+  // TOMO: [
+  //   {
+  //     name: makeNodeName('TOMO', 'tomocoin'),
+  //     type: 'rpc',
+  //     service: 'tomocoin.io',
+  //     url: 'https://core.tomocoin.io'
+  //   }
+  // ],
 
-  MUSIC: [
-    {
-      name: makeNodeName('MUSIC', 'music'),
-      type: 'rpc',
-      service: 'musicoin.tw',
-      url: 'https://mewapi.musicoin.tw'
-    }
-  ],
+  // ELLA: [
+  //   {
+  //     name: makeNodeName('ELLA', 'ellaism'),
+  //     type: 'rpc',
+  //     service: 'ellaism.org',
+  //     url: 'https://jsonrpc.ellaism.org'
+  //   }
+  // ],
 
-  ETSC: [
-    {
-      name: makeNodeName('ETSC', 'etsc'),
-      type: 'rpc',
-      service: 'ethereumsocial.kr',
-      url: 'https://node.ethereumsocial.kr'
-    }
-  ],
+  // MUSIC: [
+  //   {
+  //     name: makeNodeName('MUSIC', 'music'),
+  //     type: 'rpc',
+  //     service: 'musicoin.tw',
+  //     url: 'https://mewapi.musicoin.tw'
+  //   }
+  // ],
 
-  EGEM: [
-    {
-      name: makeNodeName('EGEM', 'egem'),
-      type: 'rpc',
-      service: 'egem.io',
-      url: 'https://jsonrpc.egem.io/custom'
-    }
-  ],
+  // ETSC: [
+  //   {
+  //     name: makeNodeName('ETSC', 'etsc'),
+  //     type: 'rpc',
+  //     service: 'ethereumsocial.kr',
+  //     url: 'https://node.ethereumsocial.kr'
+  //   }
+  // ],
 
-  CLO: [
-    {
-      name: makeNodeName('CLO', 'clo'),
-      type: 'rpc',
-      service: '0xinfra.com',
-      url: 'https://clo-geth.0xinfra.com/'
-    },
-    {
-      name: makeNodeName('CLO', 'chainkorea'),
-      type: 'rpc',
-      service: 'Chainkorea',
-      url: 'https://node.clopool.net/'
-    }
-  ],
+  // EGEM: [
+  //   {
+  //     name: makeNodeName('EGEM', 'egem'),
+  //     type: 'rpc',
+  //     service: 'egem.io',
+  //     url: 'https://jsonrpc.egem.io/custom'
+  //   }
+  // ],
 
-  RSK: [
-    {
-      name: makeNodeName('RSK', 'rsk_mainnet'),
-      type: 'rpc',
-      service: 'mycrypto.rsk.co',
-      url: 'https://mycrypto.rsk.co/'
-    }
-  ],
+  // CLO: [
+  //   {
+  //     name: makeNodeName('CLO', 'clo'),
+  //     type: 'rpc',
+  //     service: '0xinfra.com',
+  //     url: 'https://clo-geth.0xinfra.com/'
+  //   },
+  //   {
+  //     name: makeNodeName('CLO', 'chainkorea'),
+  //     type: 'rpc',
+  //     service: 'Chainkorea',
+  //     url: 'https://node.clopool.net/'
+  //   }
+  // ],
 
-  RSK_TESTNET: [
-    {
-      name: makeNodeName('RSK_TESTNET', 'rsk_testnet'),
-      type: 'rpc',
-      service: 'mycrypto.testnet.rsk.co',
-      url: 'https://mycrypto.testnet.rsk.co/'
-    }
-  ],
+  // RSK: [
+  //   {
+  //     name: makeNodeName('RSK', 'rsk_mainnet'),
+  //     type: 'rpc',
+  //     service: 'mycrypto.rsk.co',
+  //     url: 'https://mycrypto.rsk.co/'
+  //   }
+  // ],
 
-  GO: [
-    {
-      name: makeNodeName('GO', 'go'),
-      type: 'rpc',
-      service: 'gochain.io',
-      url: 'https://rpc.gochain.io/'
-    }
-  ],
+  // RSK_TESTNET: [
+  //   {
+  //     name: makeNodeName('RSK_TESTNET', 'rsk_testnet'),
+  //     type: 'rpc',
+  //     service: 'mycrypto.testnet.rsk.co',
+  //     url: 'https://mycrypto.testnet.rsk.co/'
+  //   }
+  // ],
 
-  GO_TESTNET: [
-    {
-      name: makeNodeName('GO_TESTNET', 'go_testnet'),
-      type: 'rpc',
-      service: 'testnet-rpc.gochain.io',
-      url: 'https://testnet-rpc.gochain.io/'
-    }
-  ],
+  // GO: [
+  //   {
+  //     name: makeNodeName('GO', 'go'),
+  //     type: 'rpc',
+  //     service: 'gochain.io',
+  //     url: 'https://rpc.gochain.io/'
+  //   }
+  // ],
 
-  EOSC: [
-    {
-      name: makeNodeName('EOSC', 'eosc'),
-      type: 'rpc',
-      service: 'eos-classic.io',
-      url: 'https://node.eos-classic.io/'
-    }
-  ],
+  // GO_TESTNET: [
+  //   {
+  //     name: makeNodeName('GO_TESTNET', 'go_testnet'),
+  //     type: 'rpc',
+  //     service: 'testnet-rpc.gochain.io',
+  //     url: 'https://testnet-rpc.gochain.io/'
+  //   }
+  // ],
 
-  ESN: [
-    {
-      name: makeNodeName('ESN', 'esn'),
-      type: 'rpc',
-      service: 'ethersocial.org',
-      url: 'https://api.esn.gonspool.com'
-    }
-  ],
+  // EOSC: [
+  //   {
+  //     name: makeNodeName('EOSC', 'eosc'),
+  //     type: 'rpc',
+  //     service: 'eos-classic.io',
+  //     url: 'https://node.eos-classic.io/'
+  //   }
+  // ],
 
-  AQUA: [
-    {
-      name: makeNodeName('AQUA', 'aquachain'),
-      type: 'rpc',
-      service: 'aquacha.in',
-      url: 'https://tx.aquacha.in/api'
-    },
-    {
-      name: makeNodeName('AQUA', 'uncan.onical'),
-      type: 'rpc',
-      service: 'uncan.onical.org',
-      url: 'https://c.onical.org'
-    }
-  ],
+  // ESN: [
+  //   {
+  //     name: makeNodeName('ESN', 'esn'),
+  //     type: 'rpc',
+  //     service: 'ethersocial.org',
+  //     url: 'https://api.esn.gonspool.com'
+  //   }
+  // ],
 
-  AKA: [
-    {
-      name: makeNodeName('AKA', 'remote.akroma.io'),
-      type: 'rpc',
-      service: 'remote.akroma.io',
-      url: 'https://remote.akroma.io'
-    },
-    {
-      name: makeNodeName('AKA', 'rpc.akroma.io'),
-      type: 'rpc',
-      service: 'rpc.akroma.io',
-      url: 'https://rpc.akroma.io'
-    }
-  ],
+  // AQUA: [
+  //   {
+  //     name: makeNodeName('AQUA', 'aquachain'),
+  //     type: 'rpc',
+  //     service: 'aquacha.in',
+  //     url: 'https://tx.aquacha.in/api'
+  //   },
+  //   {
+  //     name: makeNodeName('AQUA', 'uncan.onical'),
+  //     type: 'rpc',
+  //     service: 'uncan.onical.org',
+  //     url: 'https://c.onical.org'
+  //   }
+  // ],
 
-  PIRL: [
-    {
-      name: makeNodeName('PIRL', 'wallrpc.pirl.io'),
-      type: 'rpc',
-      service: 'wallrpc.pirl.io',
-      url: 'https://wallrpc.pirl.io'
-    }
-  ],
+  // AKA: [
+  //   {
+  //     name: makeNodeName('AKA', 'remote.akroma.io'),
+  //     type: 'rpc',
+  //     service: 'remote.akroma.io',
+  //     url: 'https://remote.akroma.io'
+  //   },
+  //   {
+  //     name: makeNodeName('AKA', 'rpc.akroma.io'),
+  //     type: 'rpc',
+  //     service: 'rpc.akroma.io',
+  //     url: 'https://rpc.akroma.io'
+  //   }
+  // ],
 
-  ATH: [
-    {
-      name: makeNodeName('ATH', 'wallet.atheios.com'),
-      type: 'rpc',
-      service: 'wallet.atheios.com',
-      url: 'https://wallet.atheios.com:8797'
-    }
-  ],
+  // PIRL: [
+  //   {
+  //     name: makeNodeName('PIRL', 'wallrpc.pirl.io'),
+  //     type: 'rpc',
+  //     service: 'wallrpc.pirl.io',
+  //     url: 'https://wallrpc.pirl.io'
+  //   }
+  // ],
 
-  ETHO: [
-    {
-      name: makeNodeName('ETHO', 'ether1.org'),
-      type: 'rpc',
-      service: 'ether1.org',
-      url: 'https://rpc.ether1.org'
-    }
-  ],
+  // ATH: [
+  //   {
+  //     name: makeNodeName('ATH', 'wallet.atheios.com'),
+  //     type: 'rpc',
+  //     service: 'wallet.atheios.com',
+  //     url: 'https://wallet.atheios.com:8797'
+  //   }
+  // ],
 
-  ILT: [
-    {
-      name: makeNodeName('ILT', 'iolite.io'),
-      type: 'rpc',
-      service: 'iolite.io',
-      url: 'https://net.iolite.io'
-    }
-  ],
+  // ETHO: [
+  //   {
+  //     name: makeNodeName('ETHO', 'ether1.org'),
+  //     type: 'rpc',
+  //     service: 'ether1.org',
+  //     url: 'https://rpc.ether1.org'
+  //   }
+  // ],
 
-  MIX: [
-    {
-      name: makeNodeName('MIX', 'mix-blockchain.org'),
-      type: 'rpc',
-      service: 'rpc2.mix-blockchain.org',
-      url: 'https://rpc2.mix-blockchain.org:8647'
-    }
-  ]
+  // ILT: [
+  //   {
+  //     name: makeNodeName('ILT', 'iolite.io'),
+  //     type: 'rpc',
+  //     service: 'iolite.io',
+  //     url: 'https://net.iolite.io'
+  //   }
+  // ],
+
+  // MIX: [
+  //   {
+  //     name: makeNodeName('MIX', 'mix-blockchain.org'),
+  //     type: 'rpc',
+  //     service: 'rpc2.mix-blockchain.org',
+  //     url: 'https://rpc2.mix-blockchain.org:8647'
+  //   }
+  // ]
 };
 
 export default NODE_CONFIGS;
