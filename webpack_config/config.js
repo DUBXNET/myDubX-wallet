@@ -15,15 +15,15 @@ const paths = {
 module.exports = {
   // Configuration
   port: process.env.HTTPS ? 3443 : 3000,
-  title: 'MyCrypto',
+  title: 'DubXNet',
   // description < 200 characters
-  description: 'MyCrypto is a free, open-source interface for interacting with the blockchain.',
+  description: 'DubXNet is a free, open-source interface for interacting with the blockchain.',
   url: 'https://mycrypto.com/',
   type: 'website',
   // img < 5MB
   img: path.join(paths.assets, 'images/link-preview.png'),
   twitter: {
-    creator: '@MyCrypto'
+    creator: '@DubXNet'
   },
   path: paths,
 

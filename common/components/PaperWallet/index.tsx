@@ -21,7 +21,7 @@ export default class PaperWallet extends React.Component<Props, {}> {
 
     return (
       <div className="PaperWallet" ref={el => (this.container = el)}>
-        <img src={sidebarImg} className="PaperWallet-sidebar" alt="MyCrypto Logo" />
+        <img src={sidebarImg} className="PaperWallet-sidebar" alt="DubXNet Logo" />
 
         <div className="PaperWallet-block">
           <div className="PaperWallet-block-box">

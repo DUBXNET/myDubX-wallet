@@ -25,7 +25,7 @@ export const Web3Decrypt: React.SFC<Props> = ({ onUnlock }) => (
     </div>
 
     <p style={{ marginTop: '1rem' }}>
-      In order to use MetaMask with MyCrypto, your ad blocker must be disabled.
+      In order to use MetaMask with DubXNet, your ad blocker must be disabled.
     </p>
   </div>
 );

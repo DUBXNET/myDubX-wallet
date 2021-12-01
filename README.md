@@ -1,8 +1,8 @@
-# MyCrypto Web & Desktop Apps
+# DubXNet Web & Desktop Apps
 
-[![Coverage Status](https://coveralls.io/repos/github/MyCryptoHQ/MyCrypto/badge.svg?branch=develop)](https://coveralls.io/github/MyCryptoHQ/MyCrypto?branch=develop)
+[![Coverage Status](https://coveralls.io/repos/github/MyCryptoHQ/DubXNet/badge.svg?branch=develop)](https://coveralls.io/github/MyCryptoHQ/DubXNet?branch=develop)
 
-* **Just looking to download?** Grab our [latest release](https://github.com/MyCryptoHQ/MyCrypto/releases).
+* **Just looking to download?** Grab our [latest release](https://github.com/MyCryptoHQ/DubXNet/releases).
 * **Looking for the old site?** Check out [https://legacy.mycrypto.com](https://legacy.mycrypto.com) or the source at [MyCryptoHQ/mycrypto.com](https://github.com/MyCryptoHQ/mycrypto.com)
 
 ## Requirements
@@ -13,7 +13,7 @@
 
 <sub>\*Higher versions should work fine, but may cause inconsistencies. It's suggested you run 8.9.4 using `nvm`.</sub>
 <br/>
-<sub>**npm is NOT supported for package management. MyCrypto uses yarn.lock to ensure sub-dependency versions are pinned, so yarn is required to install node_modules</sub>
+<sub>**npm is NOT supported for package management. DubXNet uses yarn.lock to ensure sub-dependency versions are pinned, so yarn is required to install node_modules</sub>
 <br/>
 <sub>\***Python 3 is **not** supported, since our dependencies use `node-gyp`.</sub>
 <br/>
@@ -119,12 +119,12 @@ yarn test:int
 │   ├── components - Components according to "Redux philosophy"
 │   ├── config - Various config data and hard-coded json
 │   ├── containers - Containers according to "Redux philosophy"
-|   ├── features - State management and async operations, organized per "feature", follows "ducks" philosophy, see: https://github.com/MyCryptoHQ/MyCrypto/issues/1435
+|   ├── features - State management and async operations, organized per "feature", follows "ducks" philosophy, see: https://github.com/MyCryptoHQ/DubXNet/issues/1435
 │   ├── libs - Framework-agnostic libraries and business logic
 |       ├── contracts - Takes in a contract interface ABI and returns an object with keys equivalent to the ABI function names that each have `.encodeInput`,  `.decodeInput`, `decodeOutput` methods. 
 |       ├── ens - Basic ENS functions for getting a name hash and mapping returned ENS contract values to human-readable strings
 |       ├── nodes - Configures Shepherd (https://github.com/MyCryptoHQ/shepherd) and exports a singleton provider
-|       ├── scheduling - Functionality for enabling Ethereum Alarm Clock usage for scheduled transactions. See https://github.com/MyCryptoHQ/MyCrypto/pull/1343
+|       ├── scheduling - Functionality for enabling Ethereum Alarm Clock usage for scheduled transactions. See https://github.com/MyCryptoHQ/DubXNet/pull/1343
 |       ├── transaction - Utilities for signing / parsing / validating transactions
 |       ├── wallet - Wallet implementations for deterministic (hw wallets, mnemonic wallets, etc), and non-deterministic (web3, parity signer, etc.) wallets.
 |       ├── web-workers - Web-worker implementation of generateKeystore + fromV3 for non-blocking encrypt/decryption
@@ -152,7 +152,7 @@ yarn test:int
 - https://basarat.gitbooks.io/typescript/
 - https://blog.mariusschulz.com/series/typescript-evolution
 
-### More information is available on the [Wiki Pages](https://github.com/MyCryptoHQ/MyCrypto/wiki)
+### More information is available on the [Wiki Pages](https://github.com/MyCryptoHQ/DubXNet/wiki)
 
 ## Thanks & Support
 

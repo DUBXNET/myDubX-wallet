@@ -283,7 +283,7 @@ export function* initWeb3Node(): SagaIterator {
   );
 
   if (!network) {
-    throw new Error(`MyCrypto doesn’t support the network with chain ID '${chainId}'`);
+    throw new Error(`DubXNet doesn’t support the network with chain ID '${chainId}'`);
   }
 
   const web3Network = makeWeb3Network(network.id);

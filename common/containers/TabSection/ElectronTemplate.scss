@@ -4,6 +4,8 @@
   height: 100%;
   display: flex;
   flex-direction: row;
+  background-image: url('~assets/images/background.jpg');
+  background-size: cover;
 
   &-sidebar,
   &-content {
@@ -21,6 +23,7 @@
   &-content {
     padding: 10vh 30px;
     flex: 1;
+    opacity: 0.95;
 
     &-tab {
       width: 100%;

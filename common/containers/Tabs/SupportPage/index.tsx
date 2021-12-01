@@ -48,7 +48,7 @@ export default class SupportPage extends React.Component<{}, State> {
 
                 <div className="SupportPage-mycrypto-legal">
                   <div className="SupportPage-mycrypto-legal-text">
-                    © {new Date().getFullYear()} MyCrypto, Inc.
+                    © {new Date().getFullYear()} DubXNet, Inc.
                   </div>
                   <div className="SupportPage-mycrypto-legal-text">
                     <a onClick={this.openDisclaimer}>{translate('DISCLAIMER')}</a>

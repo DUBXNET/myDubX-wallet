@@ -38,7 +38,7 @@ class SupportFooter extends React.PureComponent<Props, {}> {
       provider === 'shapeshift'
         ? 'support@shapeshift.zendesk.com,support@mycrypto.com'
         : 'support@mycrypto.com,mew@bity.com';
-    const mailSubject = encodeURI('Issue regarding my Swap via MyCrypto');
+    const mailSubject = encodeURI('Issue regarding my Swap via DubXNet');
     const serviceProvider = provider.charAt(0).toUpperCase() + provider.slice(1);
     let mailBody;
     let fallbackBody;
@@ -60,7 +60,7 @@ Receiving Address: ${destinationAddress || ''}
 Rate: ${rates[pair].rate} ${destination.label}/${origin.label}
         `);
       fallbackBody = `To: ${emailTo}
-Subject: Issue regarding my Swap via MyCrypto
+Subject: Issue regarding my Swap via DubXNet
 Message:
 Provider: ${serviceProvider}
 REF ID#: ${reference || ''}

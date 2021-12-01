@@ -73,12 +73,12 @@ export default class Footer extends React.PureComponent<Props, State> {
                 src={logo}
                 height="55px"
                 width="auto"
-                alt="MyCrypto logo"
+                alt="DubXNet logo"
               />
             </NewTabLink>
 
             <div className="Footer-about-links">
-              <NewTabLink href="https://mycrypto.com">MyCrypto.com</NewTabLink>
+              <NewTabLink href="https://mycrypto.com">dubxnet.com</NewTabLink>
               <NewTabLink href={knowledgeBaseURL}>{translateRaw('FOOTER_SUPPORT')}</NewTabLink>
               <NewTabLink href="https://about.mycrypto.com">
                 {translateRaw('FOOTER_TEAM')}
@@ -92,7 +92,7 @@ export default class Footer extends React.PureComponent<Props, State> {
 
             <div className="Footer-about-legal">
               <div className="Footer-about-legal-text">
-                © {new Date().getFullYear()} MyCrypto, Inc.
+                © {new Date().getFullYear()} DubXNet, Inc.
               </div>
               <div className="Footer-about-legal-text">
                 <a onClick={this.toggleModal}>{translateRaw('DISCLAIMER')}</a>

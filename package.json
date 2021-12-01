@@ -1,10 +1,10 @@
 {
-  "name": "MyCrypto",
-  "author": "MyCryptoHQ",
-  "version": "1.4.2",
+  "name": "DubXNet",
+  "author": "DubXNet",
+  "version": "1.0.0",
   "main": "main.js",
-  "description": "MyCrypto web and electron app",
-  "repository": "https://github.com/MyCryptoHQ/MyCrypto",
+  "description": "DubXNet web and electron app",
+  "repository": "https://github.com/MyCryptoHQ/DubXNet",
   "engines": {
     "node": ">= 8.0.0",
     "npm": ">= 5.0.0"

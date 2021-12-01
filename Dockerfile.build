@@ -26,4 +26,26 @@ ENV PATH      $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 RUN apt-get install -y git python libudev-dev libusb-1.0-0-dev pngquant libpng16-dev
 RUN npm i yarn@1.7.0 -g 
 
+RUN apt-get update -y && \
+  apt-get install -y --no-install-recommends mono-devel ca-certificates-mono && \
+  apt-get clean && rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && apt-get install -y apt-transport-https
+
+RUN dpkg --add-architecture i386 && \
+  curl -Lo /usr/share/keyrings/winehq.asc https://dl.winehq.org/wine-builds/winehq.key && \
+  echo 'deb [signed-by=/usr/share/keyrings/winehq.asc] https://dl.winehq.org/wine-builds/ubuntu/ xenial main' > /etc/apt/sources.list.d/winehq.list && \
+  apt-get update && \
+  apt-get install -y --no-install-recommends winehq-stable --allow-unauthenticated && \
+  # clean
+  apt-get clean && rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update -y && \ 
+    apt-get install -y zip unzip
+
+RUN curl -L https://github.com/electron-userland/electron-builder-binaries/releases/download/wine-2.0.3-mac-10.13/wine-home.zip > /tmp/wine-home.zip && unzip /tmp/wine-home.zip -d /root/.wine && unlink /tmp/wine-home.zip
+
+ENV WINEDEBUG -all,err+all
+ENV WINEDLLOVERRIDES winemenubuilder.exe=d
+
 WORKDIR /app

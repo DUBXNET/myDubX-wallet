@@ -8,7 +8,7 @@ const LINK_COLUMNS = [
     heading: translateRaw('NEW_FOOTER_TEXT_6'),
     links: [
       {
-        title: 'MyCrypto.com',
+        title: 'dubxnet.com',
         link: 'https://www.mycrypto.com/'
       },
       {

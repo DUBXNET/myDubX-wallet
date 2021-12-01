@@ -5,7 +5,7 @@ import './index.scss';
 
 const SUBJECT = 'Error!';
 const DESCRIPTION =
-  'I encountered an error while using MyCrypto. Here are the steps to re-create the issue:\n\nThe full error message:';
+  'I encountered an error while using DubXNet. Here are the steps to re-create the issue:\n\nThe full error message:';
 
 interface Props {
   error: Error;
@@ -28,7 +28,7 @@ const ErrorScreen: React.SFC<Props> = ({ error }) => {
           </a>{' '}
           if a refresh doesn't fix it (or click it anyway to open a ticket 😊). You can also submit
           an issue on our{' '}
-          <NewTabLink href="https://github.com/MyCryptoHQ/MyCrypto/issues">
+          <NewTabLink href="https://github.com/MyCryptoHQ/DubXNet/issues">
             GitHub Repository
           </NewTabLink>. Please attach the following error to help our team solve your issue.
         </p>
