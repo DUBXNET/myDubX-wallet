@@ -49,7 +49,7 @@ const DisclaimerModal: React.SFC<Props> = ({ isOpen, handleClose }) => {
         <br />
         Copyright (c) 2015-2017 MyEtherWallet LLC
         <br />
-        Copyright (c) 2018 DubXNet, Inc.
+        Copyright (c) 2016-2023 DubXNet, Inc.
       </p>
       <p>
         Permission is hereby granted, free of charge, to any person obtaining a copy of this
