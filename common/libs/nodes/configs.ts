@@ -12,28 +12,37 @@ export const NODE_CONFIGS: { [key in StaticNetworkIds]: RawNodeConfig[] } = {
       name: makeNodeName('DUBX', 'auto'),
       type: 'rpc',
       service: 'RPC',
-      url: 'http://rpc.dubxnet.com'
-    },
-    {
-      name: makeNodeName('DUBX', 'explorer'),
-      type: 'etherscan',
-      service: 'Explorer',
-      url: 'http://explorer.dubxnet.com/api'
+      url: 'http://rpc.dubxnet.com:8545'
     }
+    
+    // {
+    //   name: makeNodeName('DUBX', 'auto'),
+    //   type: 'rpc',
+    //   service: 'RPC',
+    //   url: 'https://rpc.dubxnet.com'
+    // }
+    // ,
+    // {
+    //   name: makeNodeName('DUBX', 'explorer'),
+    //   type: 'etherscan',
+    //   service: 'Explorer',
+    //   url: 'http://explorer.dubxnet.com/api'
+    // }
   ],
   DUBT: [
     {
       name: makeNodeName('DUBT', 'auto'),
       type: 'rpc',
       service: 'RPC',
-      url: 'http://explorer.testnet.dubxnet.com/prc'
-    },
-    {
-      name: makeNodeName('DUBT', 'explorer'),
-      type: 'etherscan',
-      service: 'Explorer testnet',
-      url: 'http://explorer.testnet.dubxnet.com/api'
+      url: 'http://explorer.testnet.dubxnet.com:8545'
     }
+    // ,
+    // {
+    //   name: makeNodeName('DUBT', 'explorer'),
+    //   type: 'etherscan',
+    //   service: 'Explorer testnet',
+    //   url: 'http://explorer.testnet.dubxnet.com/api'
+    // }
   ],
   ETH: [
     {

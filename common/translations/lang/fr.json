@@ -637,7 +637,7 @@
     "WELCOME_MODAL_FEATURE_4": "Historique des transactions récentes",
     "WELCOME_MODAL_FEATURE_5": "Une application PC téléchargeable",
     "WELCOME_MODAL_FEATURE_MORE": "...et bien plus encore! ",
-    "WELCOME_MODAL_LINKS": "Aidez-nous en nous signalant tout problème rencontré en [signalant des bugs sur GitHub](https://github.com/dubxnet/DubXNet/issues) ou [HackerOne](https://hackerone.com/mycrypto). Besoin de quelque chose sur l'ancien site, ou l'ancien design vous manque ? Vous trouverez l'ancienne version ici [DubXNet Legacy](https://legacy.dubxnet.com).",
+    "WELCOME_MODAL_LINKS": "Aidez-nous en nous signalant tout problème rencontré en [signalant des bugs sur GitHub](https://github.com/dubxnet/DubXNet/issues) ou [HackerOne](https://hackerone.com/dubxnet). Besoin de quelque chose sur l'ancien site, ou l'ancien design vous manque ? Vous trouverez l'ancienne version ici [DubXNet Legacy](https://dubxnet.com).",
     "WELCOME_MODAL_CONTINUE": "Découvrir le nouveau site!",
     "HARDWARE_PROMO": "En savoir plus sur la protection de vos fonds.",
     "SHAPESHIFT_PROMO_1": "Échanger des Cryptomonnaies",
@@ -661,7 +661,7 @@
     "NETWORK_2": "réseau",
     "PROVIDED_BY": "fourni par",
     "YOU_ARE_INTERACTING": "Vous êtes entrain de communiquer avec le",
-    "ANNOUNCEMENT_MESSAGE": "Bienvenue sur le nouveau DubXNet. Nous espérons qu'il vous plaît ! Si vous avez besoin de l'ancien site pour une urgence, vous pouvez toujours accéder à [DubXNet Legacy](https://legacy.dubxnet.com)",
+    "ANNOUNCEMENT_MESSAGE": "Bienvenue sur le nouveau DubXNet. Nous espérons qu'il vous plaît ! Si vous avez besoin de l'ancien site pour une urgence, vous pouvez toujours accéder à [DubXNet Legacy](https://dubxnet.com)",
     "U2F_NOT_SUPPORTED": "Le standard U2F que les portefeuilles physiques utilisent ne semble pas supporté par votre navigateur. Veuillez réessayer en utilisant Google Chrome."
   }
 }

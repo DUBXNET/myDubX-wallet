@@ -18,7 +18,7 @@ export const DOWNLOAD_MYCRYPTO_LINK = 'https://download.dubxnet.com/';
 
 export const socialMediaLinks: Link[] = [
   {
-    link: 'https://twitter.com/mycrypto',
+    link: 'https://twitter.com/dubxnet',
     text: 'twitter'
   },
   {
@@ -26,11 +26,11 @@ export const socialMediaLinks: Link[] = [
     text: 'facebook'
   },
   {
-    link: 'https://medium.com/@mycrypto',
+    link: 'https://medium.com/@dubxnet',
     text: 'medium'
   },
   {
-    link: 'https://www.linkedin.com/company/mycrypto',
+    link: 'https://www.linkedin.com/company/dubxnet',
     text: 'linkedin'
   },
   {
@@ -38,7 +38,7 @@ export const socialMediaLinks: Link[] = [
     text: 'github'
   },
   {
-    link: 'https://www.reddit.com/r/mycrypto/',
+    link: 'https://www.reddit.com/r/dubxnet/',
     text: 'reddit'
   },
   {
@@ -48,10 +48,6 @@ export const socialMediaLinks: Link[] = [
 ];
 
 export const productLinks: Link[] = [
-  {
-    link: 'https://legacy.dubxnet.com/',
-    text: translateRaw('OLD_MYCRYPTO')
-  },
   {
     link:
       'https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn',
@@ -67,11 +63,11 @@ export const productLinks: Link[] = [
     text: translateRaw('ETHERSCAMDB')
   },
   {
-    link: 'https://legacy.dubxnet.com/helpers.html',
+    link: 'https://dubxnet.com/helpers.html',
     text: translateRaw('FOOTER_HELP_AND_DEBUGGING')
   },
   {
-    link: 'https://hackerone.com/mycrypto',
+    link: 'https://hackerone.com/dubxnet',
     text: translateRaw('FOOTER_HACKERONE')
   }
 ];

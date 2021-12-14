@@ -164,7 +164,7 @@ class MobileHeader extends Component<Props> {
                   </li>
                   <li>
                     <a
-                      href="https://medium.com/@mycrypto"
+                      href="https://medium.com/@dubxnet"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

@@ -74,7 +74,7 @@ class DesktopHeader extends Component<Props> {
                   </a>
                 </li>
                 <li>
-                  <a href="https://medium.com/@mycrypto" target="_blank" rel="noopener noreferrer">
+                  <a href="https://medium.com/@dubxnet" target="_blank" rel="noopener noreferrer">
                     {translateRaw('NEW_HEADER_TEXT_2')} <i className="fa fa-caret-right" />
                   </a>
                 </li>

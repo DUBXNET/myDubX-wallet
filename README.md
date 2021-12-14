@@ -3,7 +3,6 @@
 [![Coverage Status](https://coveralls.io/repos/github/dubxnet/DubXNet/badge.svg?branch=develop)](https://coveralls.io/github/dubxnet/DubXNet?branch=develop)
 
 * **Just looking to download?** Grab our [latest release](https://github.com/dubxnet/DubXNet/releases).
-* **Looking for the old site?** Check out [https://legacy.dubxnet.com](https://legacy.dubxnet.com) or the source at [dubxnet/dubxnet.com](https://github.com/dubxnet/dubxnet.com)
 
 ## Requirements
 
