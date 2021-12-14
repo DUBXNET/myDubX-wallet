@@ -1,1 +1,1 @@
-Please see the [Contributor Guidelines on the wiki](https://github.com/MyCryptoHQ/DubXNet/wiki/Contributor-Guidelines).
+Please see the [Contributor Guidelines on the wiki](https://github.com/dubxnet/DubXNet/wiki/Contributor-Guidelines).

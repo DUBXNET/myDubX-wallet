@@ -12,7 +12,7 @@ export const NODE_CONFIGS: { [key in StaticNetworkIds]: RawNodeConfig[] } = {
       name: makeNodeName('DUBX', 'auto'),
       type: 'rpc',
       service: 'RPC',
-      url: 'http://explorer.dubxnet.com/prc'
+      url: 'http://rpc.dubxnet.com'
     },
     {
       name: makeNodeName('DUBX', 'explorer'),

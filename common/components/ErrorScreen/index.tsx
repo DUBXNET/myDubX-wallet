@@ -22,13 +22,13 @@ const ErrorScreen: React.SFC<Props> = ({ error }) => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href={`mailto:support@mycrypto.com?Subject=${SUBJECT}&body=${DESCRIPTION}`}
+            href={`mailto:support@dubxnet.com?Subject=${SUBJECT}&body=${DESCRIPTION}`}
           >
-            support@mycrypto.com
+            support@dubxnet.com
           </a>{' '}
           if a refresh doesn't fix it (or click it anyway to open a ticket 😊). You can also submit
           an issue on our{' '}
-          <NewTabLink href="https://github.com/MyCryptoHQ/DubXNet/issues">
+          <NewTabLink href="https://github.com/dubxnet/DubXNet/issues">
             GitHub Repository
           </NewTabLink>. Please attach the following error to help our team solve your issue.
         </p>

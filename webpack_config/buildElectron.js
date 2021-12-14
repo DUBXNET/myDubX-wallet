@@ -41,7 +41,7 @@ async function build() {
       x64: true,
       ia32: true,
       config: {
-        appId: 'com.github.mycrypto.mycryptohq',
+        appId: 'com.github.dubxnet.wallet',
         productName: 'DubXNet',
         directories: {
           app: jsBuildDir,

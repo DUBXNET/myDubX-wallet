@@ -18,7 +18,7 @@ module.exports = {
   title: 'DubXNet',
   // description < 200 characters
   description: 'DubXNet is a free, open-source interface for interacting with the blockchain.',
-  url: 'https://mycrypto.com/',
+  url: 'https://dubxnet.com/',
   type: 'website',
   // img < 5MB
   img: path.join(paths.assets, 'images/link-preview.png'),

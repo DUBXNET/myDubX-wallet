@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "main": "main.js",
   "description": "DubXNet web and electron app",
-  "repository": "https://github.com/MyCryptoHQ/DubXNet",
+  "repository": "https://github.com/dubxnet/DubXNet",
   "engines": {
     "node": ">= 8.0.0",
     "npm": ">= 5.0.0"

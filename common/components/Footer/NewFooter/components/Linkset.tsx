@@ -9,23 +9,23 @@ const LINK_COLUMNS = [
     links: [
       {
         title: 'dubxnet.com',
-        link: 'https://www.mycrypto.com/'
+        link: 'https://www.dubxnet.com/'
       },
       {
         title: translateRaw('NEW_FOOTER_TEXT_7'),
-        link: 'https://support.mycrypto.com/'
+        link: 'https://support.dubxnet.com/'
       },
       {
         title: translateRaw('NEW_FOOTER_TEXT_8'),
-        link: 'https://about.mycrypto.com/'
+        link: 'https://about.dubxnet.com/'
       },
       {
         title: translateRaw('NEW_FOOTER_TEXT_9'),
-        link: 'mailto://press@mycrypto.com'
+        link: 'mailto://press@dubxnet.com'
       },
       {
         title: translateRaw('NEW_FOOTER_TEXT_10'),
-        link: 'https://about.mycrypto.com/privacy/'
+        link: 'https://about.dubxnet.com/privacy/'
       }
     ]
   },

@@ -26,7 +26,7 @@ export default function FourthSlide() {
         </section>
         <p>
           {translate('ONBOARDING_TEXT_29', {
-            $link: 'https://support.mycrypto.com/'
+            $link: 'https://support.dubxnet.com/'
           })}
         </p>
         <OnboardingButton />

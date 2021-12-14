@@ -149,7 +149,7 @@ const WalletDecrypt = withRouter<Props>(
         initialParams: {},
         unlock: this.props.setWallet,
         helpLink:
-          'https://support.mycrypto.com/accessing-your-wallet/how-to-use-your-trezor-with-mycrypto.html'
+          'https://support.dubxnet.com/accessing-your-wallet/how-to-use-your-trezor-with-mycrypto.html'
       },
       [SecureWalletName.SAFE_T]: {
         lid: 'X_SAFE_T',

@@ -61,7 +61,7 @@ class LedgerNanoSDecryptClass extends PureComponent<Props, State> {
         <div className="LedgerDecrypt">
           <div className="alert alert-danger">
             Unlocking a Ledger hardware wallet is only possible on pages served over HTTPS. You can
-            unlock your wallet at <NewTabLink href="https://mycrypto.com">dubxnet.com</NewTabLink>
+            unlock your wallet at <NewTabLink href="https://dubxnet.com">dubxnet.com</NewTabLink>
           </div>
         </div>
       );

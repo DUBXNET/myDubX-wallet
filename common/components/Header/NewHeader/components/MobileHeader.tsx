@@ -155,7 +155,7 @@ class MobileHeader extends Component<Props> {
                 <ul className="MobileHeader-menu-bottom">
                   <li>
                     <a
-                      href="https://support.mycrypto.com/"
+                      href="https://support.dubxnet.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

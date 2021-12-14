@@ -36,8 +36,8 @@ class SupportFooter extends React.PureComponent<Props, {}> {
     const rates = provider === 'shapeshift' ? shapeshiftRates.byId : bityRates.byId;
     const emailTo =
       provider === 'shapeshift'
-        ? 'support@shapeshift.zendesk.com,support@mycrypto.com'
-        : 'support@mycrypto.com,mew@bity.com';
+        ? 'support@shapeshift.zendesk.com,support@dubxnet.com'
+        : 'support@dubxnet.com,mew@bity.com';
     const mailSubject = encodeURI('Issue regarding my Swap via DubXNet');
     const serviceProvider = provider.charAt(0).toUpperCase() + provider.slice(1);
     let mailBody;

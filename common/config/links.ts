@@ -14,7 +14,7 @@ interface Link {
   text: string;
 }
 
-export const DOWNLOAD_MYCRYPTO_LINK = 'https://download.mycrypto.com/';
+export const DOWNLOAD_MYCRYPTO_LINK = 'https://download.dubxnet.com/';
 
 export const socialMediaLinks: Link[] = [
   {
@@ -22,7 +22,7 @@ export const socialMediaLinks: Link[] = [
     text: 'twitter'
   },
   {
-    link: 'https://www.facebook.com/mycryptoHQ/',
+    link: 'https://www.facebook.com/dubxnet/',
     text: 'facebook'
   },
   {
@@ -34,7 +34,7 @@ export const socialMediaLinks: Link[] = [
     text: 'linkedin'
   },
   {
-    link: 'https://github.com/MyCryptoHQ',
+    link: 'https://github.com/dubxnet',
     text: 'github'
   },
   {
@@ -49,7 +49,7 @@ export const socialMediaLinks: Link[] = [
 
 export const productLinks: Link[] = [
   {
-    link: 'https://legacy.mycrypto.com/',
+    link: 'https://legacy.dubxnet.com/',
     text: translateRaw('OLD_MYCRYPTO')
   },
   {
@@ -67,7 +67,7 @@ export const productLinks: Link[] = [
     text: translateRaw('ETHERSCAMDB')
   },
   {
-    link: 'https://legacy.mycrypto.com/helpers.html',
+    link: 'https://legacy.dubxnet.com/helpers.html',
     text: translateRaw('FOOTER_HELP_AND_DEBUGGING')
   },
   {

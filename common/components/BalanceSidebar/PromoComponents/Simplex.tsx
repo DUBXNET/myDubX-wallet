@@ -4,7 +4,7 @@ import { NewTabLink } from 'components/ui';
 import translate from 'translations';
 
 export const Simplex: React.SFC = () => (
-  <NewTabLink className="Promos-promo Promos--simplex" href={`https://buy.mycrypto.com/`}>
+  <NewTabLink className="Promos-promo Promos--simplex" href={`https://buy.dubxnet.com/`}>
     <div className="Promos-promo-inner">
       <div className="Promos-promo-text">
         <h5 key="2">{translate('SIMPLEX_PROMO')}</h5>

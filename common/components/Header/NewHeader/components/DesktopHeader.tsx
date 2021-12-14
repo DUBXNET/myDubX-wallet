@@ -69,7 +69,7 @@ class DesktopHeader extends Component<Props> {
             <section className="DesktopHeader-top-left">
               <ul className="DesktopHeader-top-links">
                 <li>
-                  <a href="https://support.mycrypto.com/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://support.dubxnet.com/" target="_blank" rel="noopener noreferrer">
                     {translateRaw('NEW_HEADER_TEXT_1')} <i className="fa fa-caret-right" />
                   </a>
                 </li>

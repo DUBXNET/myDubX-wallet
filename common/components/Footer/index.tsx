@@ -60,7 +60,7 @@ export default class Footer extends React.PureComponent<Props, State> {
                   {link.text}
                 </NewTabLink>
               ))}
-              <NewTabLink href="mailto:press@mycrypto.com">
+              <NewTabLink href="mailto:press@dubxnet.com">
                 {translateRaw('FOOTER_PRESS')}
               </NewTabLink>
             </div>
@@ -78,12 +78,12 @@ export default class Footer extends React.PureComponent<Props, State> {
             </NewTabLink>
 
             <div className="Footer-about-links">
-              <NewTabLink href="https://mycrypto.com">dubxnet.com</NewTabLink>
+              <NewTabLink href="https://dubxnet.com">dubxnet.com</NewTabLink>
               <NewTabLink href={knowledgeBaseURL}>{translateRaw('FOOTER_SUPPORT')}</NewTabLink>
-              <NewTabLink href="https://about.mycrypto.com">
+              <NewTabLink href="https://about.dubxnet.com">
                 {translateRaw('FOOTER_TEAM')}
               </NewTabLink>
-              <NewTabLink href="https://about.mycrypto.com/privacy/">
+              <NewTabLink href="https://about.dubxnet.com/privacy/">
                 {translateRaw('FOOTER_PRIVACY_POLICY')}
               </NewTabLink>
             </div>

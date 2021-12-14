@@ -39,7 +39,7 @@ export function parseAssetName(assetName: string) {
 }
 
 async function getGithubReleases(): Promise<Releases[]> {
-  const apiUrl = 'https://api.github.com/repos/MyCryptoHQ/DubXNet/releases';
+  const apiUrl = 'https://api.github.com/repos/dubxnet/DubXNet/releases';
   const res = await fetch(apiUrl, {
     method: 'GET',
     mode: 'cors',

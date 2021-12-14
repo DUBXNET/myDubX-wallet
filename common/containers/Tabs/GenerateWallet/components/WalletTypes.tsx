@@ -204,7 +204,7 @@ const WalletSuggestions: React.SFC<WalletSuggestionsProps> = ({ showGenerate }) 
 
           <div className="WalletTypes-download">
             <NewTabLink
-              href="https://download.mycrypto.com"
+              href="https://download.dubxnet.com"
               className="WalletTypes-download-button btn btn-primary btn-lg"
             >
               {translate('WALLET_SUGGESTION_DESKTOP_APP')}
