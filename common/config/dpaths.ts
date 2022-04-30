@@ -1,40 +1,40 @@
 export const ETH_DEFAULT: DPath = {
-  label: 'Default (ETH)',
+  label: 'Default (DUBX)',
   value: "m/44'/60'/0'/0"
 };
 
 export const ETH_TREZOR: DPath = {
-  label: 'TREZOR (ETH)',
+  label: 'TREZOR (DUBX)',
   value: "m/44'/60'/0'/0"
 };
 
 export const ETH_SAFE_T: DPath = {
-  label: 'Safe-T (ETH)',
+  label: 'Safe-T (DUBX)',
   value: "m/44'/60'/0'/0"
 };
 
 export const ETH_LEDGER: DPath = {
-  label: 'Ledger (ETH)',
+  label: 'Ledger (DUBX)',
   value: "m/44'/60'/0'"
 };
 
 export const ETC_LEDGER: DPath = {
-  label: 'Ledger (ETC)',
+  label: 'Ledger (DUBX)',
   value: "m/44'/60'/160720'/0'"
 };
 
 export const ETC_TREZOR: DPath = {
-  label: 'TREZOR (ETC)',
+  label: 'TREZOR (DUBX)',
   value: "m/44'/61'/0'/0"
 };
 
 export const ETC_SAFE_T: DPath = {
-  label: 'Safe-T (ETC)',
+  label: 'Safe-T (DUBX)',
   value: "m/44'/61'/0'/0"
 };
 
 export const ETH_TESTNET: DPath = {
-  label: 'Testnet (ETH)',
+  label: 'Testnet (DUBT)',
   value: "m/44'/1'/0'/0"
 };
 
@@ -181,7 +181,7 @@ export const DPaths: DPath[] = [
 ];
 
 // PATHS TO BE INCLUDED REGARDLESS OF WALLET FORMAT
-export const EXTRA_PATHS = [ETH_SINGULAR];
+export const EXTRA_PATHS = [];
 
 // Full length deterministic wallet paths from BIP44
 // https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki

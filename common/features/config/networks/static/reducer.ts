@@ -35,10 +35,6 @@ export const STATIC_NETWORKS_INITIAL_STATE: types.ConfigStaticNetworksState = {
       name: 'Explorer',
       origin: 'http://explorer.dubxnet.com'
     }),
-    tokenExplorer: {
-      name: ethPlorer,
-      address: ETHTokenExplorer
-    },
     tokens: require('config/tokens/mainnet.json'),
     contracts: require('config/contracts/mainnet.json'),
     dPathFormats: {

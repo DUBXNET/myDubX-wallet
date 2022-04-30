@@ -31,19 +31,19 @@ export class BalanceSidebar extends React.Component<StateProps> {
         name: 'Account Info',
         content: <AccountInfo wallet={wallet} />
       },
-      {
-        name: 'Promos',
-        isFullWidth: true,
-        content: <Promos />
-      },
+      // {
+      //   name: 'Promos',
+      //   isFullWidth: true,
+      //   content: <Promos />
+      // },
       {
         name: 'Token Balances',
         content: <TokenBalances />
       },
-      {
-        name: 'Equivalent Values',
-        content: <EquivalentValues />
-      }
+      // {
+      //   name: 'Equivalent Values',
+      //   content: <EquivalentValues />
+      // }
     ];
 
     return (

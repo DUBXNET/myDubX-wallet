@@ -92,33 +92,6 @@ export default class SupportPage extends React.Component<{}, State> {
               </div>
             </div>
           </div>
-
-          <div className="row">
-            <div className="col-xs-12">
-              <div className="SupportPage-donate Tab-content-pane">
-                <h3 className="SupportPage-donate-title">{translate('FOOTER_DONATIONS')}</h3>
-
-                <div className="row">
-                  {donationCurrencies.map(currency => (
-                    <div className="col-sm-6 col-xs-12">
-                      <div className="SupportPage-donate-type">
-                        <div className="SupportPage-donate-type-currency">
-                          <span
-                            className={`SupportPage-donate-type-currency-icon is-${currency}`}
-                          />
-                          {`${currency} `}
-                          {translate('TOKEN_ADDR')}
-                        </div>
-                        <span className="SupportPage-donate-type-address">
-                          {donationAddressMap[currency]}
-                        </span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
         <DisclaimerModal isOpen={this.state.isDisclaimerOpen} handleClose={this.closeDisclaimer} />

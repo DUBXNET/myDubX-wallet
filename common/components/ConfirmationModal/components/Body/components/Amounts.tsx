@@ -30,7 +30,7 @@ class AmountsClass extends Component<StateProps> {
       total,
       network
     } = this.props;
-    const showConversion = valueUSD && totalUSD && feeUSD;
+    const showConversion = false // valueUSD && totalUSD && feeUSD;
 
     return (
       <table className="tx-modal-amount">

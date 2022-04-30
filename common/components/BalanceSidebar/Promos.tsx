@@ -13,7 +13,7 @@ const CarouselAnimation = ({ children, ...props }: any) => (
 );
 
 // Don't change Coinbase index
-const promos = [HardwareWallets, Coinbase, Shapeshift, Simplex];
+const promos = [];
 
 interface State {
   activePromo: number;
